@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="API_Regression_Suite">
+    <listeners>
+        <listener class-name="Utilities.TestListeners"/>
+        <listener class-name="Utilities.AnnotationTransformer"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="API_Test">
+        <classes>
+            <class name="Tests.CreateUserTest"/>
+            <class name="Tests.GetUserTest"/>
+            <class name="Tests.UpdateUserTest"/>
+            <class name="Tests.DeleteUserTest"/>
+        </classes>
+    </test>
+</suite>
